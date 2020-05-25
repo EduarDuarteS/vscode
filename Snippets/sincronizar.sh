@@ -9,4 +9,9 @@ cd ../AppData/Roaming/Code/User/snippets
 ls
 cp javascript.json $dir/javascript.json
 
+if [$1 = "y"]
+then
+echo "entro al if"
+fi
+
 
