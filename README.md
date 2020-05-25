@@ -6,7 +6,7 @@ También hay un par de extensiones bastante útiles que les pueden servir.
 
 ## Extensiones
 
-* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode)
+* [html-preview](https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode)
 
 * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 
