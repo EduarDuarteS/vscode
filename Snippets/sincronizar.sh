@@ -17,6 +17,7 @@ pullGH() {
     sleep 1
     #"$mensaje"
 }
+pullGH
 
 # Cambia al directorio de snippets de visual studio Code
 dir=$(PWD)
