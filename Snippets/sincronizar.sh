@@ -6,8 +6,8 @@ pushGH() {
     git pull o master
     sleep 1
     git add javascript.json
-    echo $mensaje
-    $mensaje
+    echo "$mensaje"
+    "$mensaje"
     #git commit -m 'actualiza snippets'
     git push o master
 }
