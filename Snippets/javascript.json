@@ -12,7 +12,7 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
+ 
 	"Print to console": {
 		"prefix": "cl",
 		"body": [
@@ -27,6 +27,6 @@
 			"console.log('$1');",
 			"$2"
 		],
-		"description": "Log output to console"
+		"description": "Log output to console "
 	}
 }

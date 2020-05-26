@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Funcion para subir cambios a github
+
 pushGH() {
     mensaje="act snippets "$(date +'%d-%m-%Y %H:%M:%S')
     git pull o master
@@ -11,16 +12,24 @@ pushGH() {
     git commit --message="$mensaje"
     git push o master
 }
+pullGH() {
+    git pull o master
+    sleep 1
+    #"$mensaje"
+}
 
-echo "Vamos a sincronizar snippets"
+# Cambia al directorio de snippets de visual studio Code
 dir=$(PWD)
 echo "directorio: " $dir
-# echo $LOCALAPPDATA
 echo $OneDrive
 cd $OneDrive
 cd ../AppData/Roaming/Code/User/snippets
-ls
-cp javascript.json $dir/javascript.json
+
+if [ $1 != pull ]; then
+    echo "Vamos a sincronizar snippets"
+    cp javascript.json $dir/javascript.json
+    ls
+fi
 
 if [ $1 = "y" ]; then
     echo "se van a subir los cambios al repositorio"
@@ -37,4 +46,8 @@ if [ $1 = 'p' ]; then
         cd $dir
         pushGH
     fi
+fi
+
+if [ $1 = 'pull' ]; then
+    cp $dir/javascript.json javascript.json
 fi
