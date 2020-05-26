@@ -2,12 +2,13 @@
 
 # Funcion para subir cambios a github
 pushGH() {
-    mensaje="'""act snippets "$(date +'%d-%m-%Y %H:%M:%S')"'"
+    mensaje="git commit -m \"""act snippets "$(date +'%d-%m-%Y %H:%M:%S')"\""
     git pull o master
     sleep 1
     git add javascript.json
     echo $mensaje
-    git commit -m $mensaje
+    $mensaje
+    #git commit -m 'actualiza snippets'
     git push o master
 }
 
